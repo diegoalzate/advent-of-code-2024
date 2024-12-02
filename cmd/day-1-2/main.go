@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-	"slices"
 	"strconv"
 	"strings"
 
@@ -54,10 +53,6 @@ func parse(lines []string) []Location {
 	}
 
 	return []Location{first, second}
-}
-
-func (l *Location) sortValues() {
-	slices.Sort(l.values)
 }
 
 func similaritySum(first Location, second Location) int {
