@@ -28,3 +28,13 @@ func ReadFile(loc string) []string {
 
 	return lines
 }
+
+func Reader(loc string) (*bufio.Reader, *os.File) {
+	file, err := os.Open(loc)
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return bufio.NewReader(file), file
+}
