@@ -172,3 +172,6 @@ func main() {
 
 	log.Printf("Result:  %v", count)
 }
+
+// for pt 2
+// wip, you could probably check if consecutive corners are the same and look for an A
